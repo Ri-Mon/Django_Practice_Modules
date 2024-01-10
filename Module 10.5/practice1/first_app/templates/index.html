@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice-1</title>
+</head>
+    <h4>Practice From GitHub: </h4>
+    <ol>
+        <li> add:   {{ users.0.id|add:5 }}    
+        </li>
+        <li> addslashes: 
+            {{ users.0.username | addslashes }}     
+        </li>
+        <li>capfirst: 
+            {{ users.0.last_name | capfirst }}     
+        </li>
+        <li>center:
+                {{ users.0.username | center:"10" }}     
+        </li>
+        <li>cut:
+            {{ users.0.name | cut:" " }}        
+        </li>
+        <li>date:<br>
+            {{ users.0.Date | date:"D d M Y" }}<br>
+            {{ users.0.Date | date:"SHORT_DATE_FORMAT"}}  
+                  
+        </li>
+        <li>default: 
+            {{ users.0.age | default:"Age is Hidden" }}
+        </li>
+        <li>dictsort:
+            {{ users.0.family_members | dictsort:"name" }}        
+        </li>
+        <li>divisibleby:
+            {{ users.0.id|divisibleby:"2" }}
+        </li>
+        <li>escape: 
+            {{ users.0.username | escape }}       
+        </li>
+        <li>filesizeformat: 
+            {{ users.0.data_size | filesizeformat }}        
+        </li>
+        <li>first
+            {{ users.0.family_members | first }}        
+        </li>
+        <li>join: 
+            {{ users.0.works | join:" // " }}        </li>
+        <li>last: 
+            {{ users.0.family_members | last }}        
+        </li>
+        <li>length: 
+            {{ users.0.works | length }}        
+        </li>
+        <li>linenumbers:
+            {{ users.0.name | linenumbers }}        
+        </li>
+        <li>lower: 
+            {{ users.0.email | lower }}        
+        </li>
+        <li>make_list: 
+            {{ users.0.email | make_list }}        
+        </li>
+        <li>random: 
+            {{ users.0.works | random }}        
+        </li>
+        <li>slice: 
+            {{ users.0.works | slice:":2" }}        
+        </li>
+        <li>slugify: 
+            {{ users.0.email | slugify }}        
+        </li>
+        <li>time:
+            <br>
+            {{ users.0.Date | time:"H:i" }} 
+            <br>
+            {{ users.0.Date | time:"H\h i\m" }}
+                   
+        </li>
+        <li>timesince: 
+            {{ users.0.Date | timesince }}        
+        </li>
+        <li>title: 
+            {{ users.0.name | title }}        </li>
+        <li><ul>
+            unordered_list:
+            {{ users.0.works | unordered_list }}
+        </ul>
+        </li>
+        <li>upper:
+            {{ users.0.last_name | upper }}
+        </li>
+        <li>wordcount: 
+            {{ users.0.name | wordcount }}
+        </li>
+        </ol>
+
+        <h4>Practice From Earthly: </h4>
+        <ol>
+
+        <li>Truncatechars Filter: 
+            {{ users.0.name | truncatechars:10 }}      
+        </li>
+
+        <li>Truncatewords Filter:
+            {{ users.0.name | truncatewords:3 }}
+        </li>
+
+        <li>Striptags Filter:
+            {{ users.0.html | striptags }}
+        </li>
+
+        <li>Pluralize Filter:
+            You have {{ users.0.id }} message{{ users.0.id | pluralize }}
+
+        </li>
+        </ol>
+        
+</body>
+</html>
