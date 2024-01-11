@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<style>
+    body{
+        height: 100vh;
+        overflow-y: hidden;
+        background-image: url(https://img.freepik.com/free-photo/plain-dark-blue-wooden-wall-product-background_53876-108327.jpg?w=1380&t=st=1705007248~exp=1705007848~hmac=08ac0684663d605f8134ad6744d91b5ed696b096b4335a146d625251e25b4318);
+        background-repeat: no-repeat;
+        background-size: cover;  
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+{{block.super}}
+
+<div class="container mt-5 pt-5">
+    <div class="card bg-info border-black mb-3 m-auto" style="max-width: 30rem;">
+        <div class="card-header text-center shadow"><h1 class="fw-lighter">Welcome To Home Page</h1></div>
+        <div class="card-body">
+          <h5 class="card-title text-center"> 
+            <a href="foodie/" class="text-decoration-none text-light fw-lighter">Click Here for Practice Page
+            </a> 
+            </h5>
+    </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+<style>
+    body{
+        height: 100vh;
+    }
+</style>
